@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import './style/tailwind.css';
+import AppComponent from './App/App.component';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <AppComponent />
   </React.StrictMode>,
   document.getElementById('root')
 );

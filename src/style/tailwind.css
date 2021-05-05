@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  src: url(../assets/fonts/HelveticaNeueCyr/HelveticaNeueCyr-Medium.ttf);
+  font-family: HelveticaNeueCyr;
+}
+
+@font-face {
+  src: url(../assets/fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.ttf);
+  font-family: HelveticaNeueCyrLight;
+}
+
+.helvetica {
+  font-family: HelveticaNeueCyr;
+}
+.helvetica-light {
+  font-family: HelveticaNeueCyrLight;
+}
+
+.nav-text {
+  @apply helvetica text-lg text-white px-5;
+}
+
+.nav-item {
+  @apply flex px-5 py-3 flex-row justify-between hover:bg-gray-900 hover:bg-opacity-30 my-1;
+}
+
+.nav-item.active {
+  @apply shadow-lg bg-clip-padding backdrop-filter backdrop-blur-md bg-gray-200 bg-opacity-10 rounded-lg;
+}
+
+.nav-tag{
+    @apply glassy px-3 text-white rounded-sm;
+}
+
+.glassy {
+  box-sizing: border-box;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  @apply bg-gray-900 bg-opacity-30 shadow-lg bg-clip-padding backdrop-filter backdrop-blur-md;
+}
