@@ -1,4 +1,4 @@
-import { NavJsx } from './Nav.jsx'
+import { NavJsx } from "./Nav.jsx";
 
 function NavComponent() {
     return ( <NavJsx /> )

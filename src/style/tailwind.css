@@ -24,19 +24,36 @@
 }
 
 .nav-item {
-  @apply flex px-5 py-3 flex-row justify-between hover:bg-gray-900 hover:bg-opacity-30 my-1;
+  @apply flex px-5 py-3 flex-row justify-between hover:bg-gray-900 hover:bg-opacity-30 my-1 ;
 }
 
 .nav-item.active {
-  @apply shadow-lg bg-clip-padding backdrop-filter backdrop-blur-md bg-gray-200 bg-opacity-10 rounded-lg;
+  @apply shadow-lg bg-clip-padding backdrop-filter backdrop-blur-md bg-gray-200 bg-opacity-10 rounded-lg glassy-border;
 }
 
 .nav-tag{
-    @apply glassy px-3 text-white rounded-sm;
+    @apply glassy px-3 text-white rounded-sm glassy-border;
+}
+
+.glassy-border{
+  box-sizing: border-box;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .glassy {
-  box-sizing: border-box;
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
   @apply bg-gray-900 bg-opacity-30 shadow-lg bg-clip-padding backdrop-filter backdrop-blur-md;
+}
+
+.user-card{
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  @apply shadow-lg bg-clip-padding backdrop-filter backdrop-blur-md bg-gray-200 bg-opacity-10 rounded-lg glassy-border flex flex-row p-5 h-40;
+}
+
+.message{
+  @apply  flex flex-row;
+}
+
+.message-body{
+  min-width: 160px;
+  @apply mx-2 p-3 glassy rounded-xl;
 }
