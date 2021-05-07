@@ -2,7 +2,7 @@ import React from "react";
 
 export const UserListJsx = () => {
   return (
-    <div className="w-1/3 glassy h-full flex flex-col p-8">
+    <div className="w-1/4 glassy h-full flex flex-col py-8">
       <div className="user-card">
         <div className="pr-5">
           <img
@@ -16,15 +16,14 @@ export const UserListJsx = () => {
                 <p className="text-white text-xl">Anuar</p>
                 <p className="text-gray-300 text-sm">time</p>
             </div>
-            <div className="">
-                <p className="text-white text-lg">Description</p>
-            </div>
-            <div className="">
+            <div className="flex flex-row">
                 <p className="text-gray-300 text-lg">ewrgwergdfgsdfgsdh
-                sdfgsdfgsfghsf</p>
+                sdfgsdfgsfghsf</p> 
+                <div className="nav-tag h-7 ml-2">1</div>
             </div>
         </div>
       </div>
     </div>
+    
   );
 };
